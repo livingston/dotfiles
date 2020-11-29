@@ -2,12 +2,12 @@
 
 ## Requirements
 
-- `dotstow` — `npm -g install dotstow`
+- `dotstow` — `npm install -g dotstow`
 
 
 ## Setup
 
-- Run `dotstow bootstrap --remote <REPO_LINK>`
+- Run `dotstow bootstrap --remote https://github.com/livingston/dotfiles.git`
 - Run `dotstow stow PACKAGES_TO_INSTALL`
 
 
