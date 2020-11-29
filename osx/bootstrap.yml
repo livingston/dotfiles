@@ -11,4 +11,4 @@
   cmd: brew install stow
 
 - message: configuring dotstow autocomplete
-  cmd: dotstow autocomplete
+  cmd: dotstow autocomplete zsh
