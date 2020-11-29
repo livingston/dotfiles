@@ -1,0 +1,98 @@
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+
+
+# osx binaries
+brew "ack"
+brew "bash"
+brew "coreutils"
+brew "ffmpeg"
+brew "findutils"
+brew "git"
+brew "gnu-sed", args: ["with-default-names"]
+brew "gnupg"
+brew "grep"
+brew "htop"
+brew "httpie
+brew "ledger"
+brew "mas"
+brew "moreutils"
+brew "ncurses"
+brew "openssh"
+brew "openssl"
+brew "screen"
+brew "ssh-copy-id"
+brew "tmux"
+brew "tree"
+brew "vim", args: ["with-override-system-vi"]
+brew "wget", args: ["with-iri"]
+brew "youtube-dl"
+brew "zsh"
+
+
+# ZSH plugins
+brew "autojump"
+brew "git-extras"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+
+# Development
+brew "diff-so-fancy"
+brew "gcc"
+brew "gradle"
+brew "lua"
+brew "m4"
+brew "make"
+brew "nginx"
+brew "node"
+brew "ocaml"
+brew "openjdk"
+brew "ruby"
+brew "sqlite"
+brew "watchman"
+brew "yarn"
+
+
+cask_args appdir: "/Applications"
+
+
+# Fonts
+cask "font-fira-code"
+cask "font-hack-nerd-font"
+cask "font-source-code-pro"
+
+
+# Applications
+cask "1password"
+cask "adobe-creative-cloud"
+cask "alfred"
+cask "bartender"
+cask "beardedspice"
+cask "bettertouchtool"
+cask "boom"
+cask "cyberduck"
+cask "docker"
+cask "expressvpn"
+cask "handbrake"
+cask "hiddenbar"
+cask "iterm2"
+cask "keybase"
+cask "ngrok"
+cask "rectangle"
+cask "spotify"
+cask "sourcetree"
+cask "steam"
+cask "the-unarchiver"
+cask "tor-browser"
+cask "transmission"
+cask "virtualbox"
+cask "virtualbox-extension-pack"
+cask "visual-studio-code-insiders"
+cask "vlc"
+cask "zerotier-one"
+cask "zoom"
+
+# App Store
+mas "Shazam", id: 897118787
+mas "TweetDeck", id: 485812721
+

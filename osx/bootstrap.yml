@@ -1,0 +1,14 @@
+- message: Installing homebrew
+  cmd: curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+
+- message: Installing oh-my-zsh
+  cmd: curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+
+- message: Installing nvm
+  cmd: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+
+- message: Setting up stow
+  cmd: brew install stow
+
+- message: configuring dotstow autocomplete
+  cmd: dotstow autocomplete

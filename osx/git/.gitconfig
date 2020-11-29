@@ -1,0 +1,85 @@
+[init]
+  defaultBranch = main
+
+[alias]
+  st = status
+  ci = commit -m
+  cia = commit --amend -m
+  ad = add
+  cl = clone
+  br = branch
+  co = checkout
+  d = diff
+  dc = diff --cached
+  l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  dw = diff --word-diff=color
+  dcw = diff --cached --word-diff=color
+  lg = log --no-merges --abbrev-commit --format='%C(red)%h %C(green)%ad %C(yellow reverse)%aN %Creset%C(yellow)%s%Creset'
+  assume = update-index --assume-unchanged
+  unassume = update-index --no-assume-unchanged
+  assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+  unassumeall = "!git assumed | xargs git update-index --no-assume-unchanged"
+  assumeall = "!git st -s | awk {'print $2'} | xargs git assume"
+
+  tags = tag -l
+	branches = branch --all
+	remotes = remote --verbose
+
+  # delete merged branches
+  dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+[branch]
+	sort = -committerdate
+
+[core]
+	autocrlf = input
+	attributesfile = ~/.gitattributes
+  excludesfile = ~/.gitignore
+  ignorecase = false
+  quotepath = false
+  trustctime = false
+  untrackedCache = true
+  whitespace=fix,-indent-with-non-tab,trailing-space
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow black
+  local = yellow
+  remote = magenta
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red reverse
+  new = green reverse
+  whitespace = white reverse
+	commit = yellow bold
+  meta = yellow
+  frag = cyan
+  old = red
+  new = green
+  whitespace = red reverse
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan reverse
+  branch = magenta
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+
+[commit]
+	gpgsign = true
+
+[fetch]
+  prune = true
+
+[help]
+  autocorrect = 1
+
+[push]
+	default = simple
+  followTags = true
