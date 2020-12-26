@@ -94,7 +94,7 @@ cask "virtualbox"
 cask "virtualbox-extension-pack"
 cask "visual-studio-code-insiders"
 cask "vlc"
-brew "webpquicklook"
+cask "webpquicklook"
 cask "zerotier-one"
 cask "zoom"
 
