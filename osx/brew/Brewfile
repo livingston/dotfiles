@@ -9,7 +9,7 @@ brew "coreutils"
 brew "ffmpeg"
 brew "findutils"
 brew "git"
-brew "gnu-sed", args: ["with-default-names"]
+brew "gnu-sed"
 brew "gnupg"
 brew "grep"
 brew "htop"
@@ -48,7 +48,9 @@ brew "node"
 brew "ocaml"
 brew "openjdk"
 brew "ruby"
+brew "shellcheck"
 brew "sqlite"
+brew "vlang"
 brew "watchman"
 brew "yarn"
 
@@ -80,6 +82,7 @@ cask "iterm2"
 cask "keybase"
 cask "ngrok"
 cask "rectangle"
+cask "responsively"
 cask "spotify"
 cask "sourcetree"
 cask "steam"
@@ -95,5 +98,4 @@ cask "zoom"
 
 # App Store
 mas "Shazam", id: 897118787
-mas "TweetDeck", id: 485812721
 
