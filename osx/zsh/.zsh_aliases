@@ -6,6 +6,7 @@ alias flushdns="dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
 alias p2s="python -m SimpleHTTPServer"
 
 alias gpr='git pull --rebase'
+alias gst="git status"
 
 alias lc="colorls"
 alias ccat="pygmentize -O style=monokai -f console256 -g";

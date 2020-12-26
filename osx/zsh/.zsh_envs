@@ -4,4 +4,13 @@ export LC_ALL=en_US.UTF-8
 
 export PATH="$PATH:`yarn global bin`"
 
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
 export GPG_TTY=$(tty);
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  #
