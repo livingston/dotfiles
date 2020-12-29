@@ -21,3 +21,8 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+# Dowload 4k videos from youtube
+ydl4k() {
+  youtube-dl -f 'bestvideo[height<=2160]+bestaudio/best[height<=2160]' https://www.youtube.com/watch\?v\="$1"
+}
