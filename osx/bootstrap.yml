@@ -12,3 +12,6 @@
 
 - message: configuring dotstow autocomplete
   cmd: dotstow autocomplete zsh
+
+- message: Installing fonts
+  cmd: ./scripts/install-fonts.sh
