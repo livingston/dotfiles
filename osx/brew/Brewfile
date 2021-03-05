@@ -26,7 +26,7 @@ brew "testdisk"
 brew "tmux"
 brew "tree"
 brew "vim"
-brew "wget", args: ["with-iri"]
+brew "wget"
 brew "youtube-dl"
 brew "zsh"
 
@@ -34,8 +34,11 @@ brew "zsh"
 # ZSH plugins
 brew "autojump"
 brew "git-extras"
+brew "zsh-autosuggestions"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
+brew "romkatv/powerlevel10k/powerlevel10k"
+
 
 # Development
 brew "diff-so-fancy"
@@ -61,10 +64,10 @@ cask_args appdir: "/Applications"
 
 # Fonts
 cask "font-fira-code"
-cask "font-firacode-nerd-font"
+cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
 cask "font-source-code-pro"
-cask "font-sourcecodepro-nerd-font"
+cask "font-sauce-code-pro-nerd-font"
 
 
 # Applications
