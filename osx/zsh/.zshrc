@@ -1,3 +1,16 @@
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+  fi
+
+
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -5,7 +18,6 @@ fi
 export TERM="xterm-256color"
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(
@@ -15,11 +27,7 @@ plugins=(
     osx
     z
     zsh-autosuggestions
-    zsh-completions
-    zsh-syntax-highlighting
 )
-
-autoload -U compinit && compinit
 
 source $HOME/.zsh_aliases
 source $HOME/.zsh_envs
@@ -39,4 +47,5 @@ setopt HIST_REDUCE_BLANKS
 setopt CORRECT
 setopt CORRECT_ALL
 
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
